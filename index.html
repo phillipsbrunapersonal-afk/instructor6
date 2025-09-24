@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buceo en Chile - Instructor PADI</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;800&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <style>
+    body { font-family: 'Raleway', sans-serif; }
+    .hero {
+      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.6)), 
+              url('https://images.unsplash.com/photo-1577454849474-7f8aab3b5e43?q=80&w=2070&auto=format&fit=crop');
+      background-size: cover;
+      background-position: center;
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- Header -->
+  <header class="fixed top-0 left-0 w-full bg-white/90 backdrop-blur shadow-md z-50">
+    <div class="max-w-6xl mx-auto flex justify-between items-center px-6 py-4">
+      <a href="#inicio" class="text-2xl font-extrabold text-cyan-700">Buceo Chile</a>
+      <nav class="hidden md:flex space-x-6 font-semibold">
+        <a href="#cursos" class="hover:text-cyan-600">Cursos</a>
+        <a href="#sobre-mi" class="hover:text-cyan-600">Mi Historia</a>
+        <a href="#testimonios" class="hover:text-cyan-600">Testimonios</a>
+        <a href="#contacto" class="hover:text-cyan-600">Contacto</a>
+      </nav>
+      <button id="mobile-menu-btn" class="md:hidden"><i data-lucide="menu"></i></button>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden px-6 py-4 bg-white shadow-lg">
+      <a href="#cursos" class="block py-2">Cursos</a>
+      <a href="#sobre-mi" class="block py-2">Mi Historia</a>
+      <a href="#testimonios" class="block py-2">Testimonios</a>
+      <a href="#contacto" class="block py-2">Contacto</a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="inicio" class="hero min-h-screen flex flex-col justify-center items-center text-center text-white px-6">
+    <h1 class="text-5xl md:text-7xl font-extrabold leading-tight">Descubre el mundo submarino de Chile</h1>
+    <p class="mt-6 text-lg md:text-2xl max-w-2xl">Vive la aventura del buceo con certificaciones PADI y experiencias únicas bajo el agua.</p>
+    <a href="#cursos" class="mt-8 bg-cyan-600 hover:bg-cyan-500 py-3 px-8 rounded-full font-bold text-lg shadow-lg transition">Explorar Cursos</a>
+  </section>
+
+  <!-- Cursos -->
+  <section id="cursos" class="py-20 bg-gray-100">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-4xl font-bold text-center mb-12 text-gray-800">Cursos PADI</h2>
+      <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+        <!-- Curso 1 -->
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition">
+          <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?q=80&w=2070&auto=format&fit=crop" class="h-48 w-full object-cover">
+          <div class="p-6">
+            <h3 class="text-2xl font-bold text-cyan-700">Open Water Diver</h3>
+            <p class="mt-2 text-gray-600">Aprende las bases para ser buzo certificado y explorar el océano con seguridad.</p>
+            <a href="#contacto" class="mt-4 inline-block bg-cyan-600 hover:bg-cyan-500 text-white py-2 px-4 rounded-lg font-semibold">Consultar</a>
+          </div>
+        </div>
+        <!-- Curso 2 -->
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition">
+          <img src="https://github.com/phillipsbrunapersonal-afk/instructor4/blob/main/imagenes/Gemini_Generated_Image_d32w6id32w6id32w.png?raw=true" class="h-48 w-full object-cover">
+          <div class="p-6">
+            <h3 class="text-2xl font-bold text-cyan-700">Advanced Open Water</h3>
+            <p class="mt-2 text-gray-600">Lleva tus habilidades al siguiente nivel con inmersiones de aventura.</p>
+            <a href="#contacto" class="mt-4 inline-block bg-cyan-600 hover:bg-cyan-500 text-white py-2 px-4 rounded-lg font-semibold">Consultar</a>
+          </div>
+        </div>
+        <!-- Curso 3 -->
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition">
+          <img src="https://github.com/phillipsbrunapersonal-afk/instructor4/blob/main/Gemini_Generated_Image_2dob7q2dob7q2dob.png?raw=true" class="h-48 w-full object-cover">
+          <div class="p-6">
+            <h3 class="text-2xl font-bold text-cyan-700">Bautismo Submarino</h3>
+            <p class="mt-2 text-gray-600">Experimenta la magia de respirar bajo el agua por primera vez.</p>
+            <a href="#contacto" class="mt-4 inline-block bg-cyan-600 hover:bg-cyan-500 text-white py-2 px-4 rounded-lg font-semibold">Agendar</a>
+          </div>
+        </div>
+        <!-- Curso 4 -->
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition">
+          <img src="https://github.com/phillipsbrunapersonal-afk/instructor4/blob/main/imagenes/Gemini_Generated_Image_ymg6cpymg6cpymg6.png?raw=true" class="h-48 w-full object-cover">
+          <div class="p-6">
+            <h3 class="text-2xl font-bold text-cyan-700">Rescue Diver</h3>
+            <p class="mt-2 text-gray-600">Aprende a prevenir y gestionar emergencias en el agua.</p>
+            <a href="#contacto" class="mt-4 inline-block bg-cyan-600 hover:bg-cyan-500 text-white py-2 px-4 rounded-lg font-semibold">Consultar</a>
+          </div>
+        </div>
+        <!-- Curso 5 -->
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition">
+          <img src="https://github.com/phillipsbrunapersonal-afk/instructor4/blob/main/imagenes/Gemini_Generated_Image_d32w6kd32w6kd32w.png?raw=true" class="h-48 w-full object-cover">
+          <div class="p-6">
+            <h3 class="text-2xl font-bold text-cyan-700">Divemaster</h3>
+            <p class="mt-2 text-gray-600">Tu primer paso hacia una carrera profesional en el buceo.</p>
+            <a href="#contacto" class="mt-4 inline-block bg-cyan-600 hover:bg-cyan-500 text-white py-2 px-4 rounded-lg font-semibold">Consultar</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sobre mí -->
+  <section id="sobre-mi" class="py-20 bg-white">
+    <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+      <video src="GHBD3354.MP4" class="rounded-xl shadow-xl w-full" autoplay loop muted playsinline></video>
+      <div>
+        <h2 class="text-4xl font-bold text-cyan-700 mb-4">Mi Historia</h2>
+        <p class="text-lg text-gray-700 leading-relaxed">Mi viaje en el buceo comenzó en Tailandia, donde descubrí la belleza del océano y nació mi pasión por este mundo. De regreso en Chile, me formé como Instructor PADI y hoy mi misión es enseñarte a amar y proteger el mar de la forma más segura y emocionante posible.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonios -->
+  <section id="testimonios" class="py-20 bg-gray-100">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+      <h2 class="text-4xl font-bold mb-12 text-gray-800">Lo que dicen mis alumnos</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-white p-6 rounded-xl shadow-md">
+          <p class="italic text-gray-600">“Hicimos el bautismo en familia y fue inolvidable. 100% recomendado.”</p>
+          <p class="mt-4 font-bold">Familia González</p>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow-md">
+          <p class="italic text-gray-600">“El curso Open Water fue excelente. Profesionalismo y buena onda.”</p>
+          <p class="mt-4 font-bold">Carla y Roberto</p>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow-md">
+          <p class="italic text-gray-600">“El Advanced me abrió un nuevo mundo. El buceo nocturno fue espectacular.”</p>
+          <p class="mt-4 font-bold">Ricardo Pérez</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contacto" class="py-20 bg-cyan-700 text-white">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <h2 class="text-4xl font-bold mb-6">¡Hablemos!</h2>
+      <p class="mb-6">¿Listo para tu próxima aventura submarina? Escríbeme y coordinamos.</p>
+      <a href="https://wa.me/56932730852" class="bg-white text-cyan-700 font-bold py-3 px-6 rounded-full shadow hover:bg-gray-200 transition">Contactar por WhatsApp</a>
+    </div>
+  </section>
+
+  <footer class="bg-gray-900 text-gray-400 py-6 text-center text-sm">
+    © 2025 Instructor PADI – Todos los derechos reservados
+  </footer>
+
+  <script>
+    lucide.createIcons();
+    const btn = document.getElementById("mobile-menu-btn");
+    const menu = document.getElementById("mobile-menu");
+    btn.addEventListener("click", () => menu.classList.toggle("hidden"));
+  </script>
+</body>
+</html>
+
